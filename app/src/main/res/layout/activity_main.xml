@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+               xmlns:tools="http://schemas.android.com/tools"
+               xmlns:app="http://schemas.android.com/apk/res-auto"
+               tools:context=".MainActivity"
+               android:id="@+id/linearLayout"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="vertical" >
+    <TextView
+            android:id="@+id/selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    </TextView>
+    <Spinner
+            android:id="@+id/ClothesName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <EditText
+            android:id="@+id/edit_text_title"
+            android:hint="input name here"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="text"/>
+
+    <EditText
+            android:id="@+id/edit_text_color"
+            android:hint="tap here to choose color"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="text"/>
+
+    <com.skydoves.colorpickerpreference.ColorPickerView
+            android:id="@+id/colorPickerView"
+            android:visibility="invisible"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:palette="@drawable/palette"
+            app:selector="@drawable/wheel" />
+    <Button
+            android:text="Add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/add_button"/>
+
+</LinearLayout>
+
